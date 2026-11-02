@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ScoreBite Privacy Policy</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #4a4a4a;
+    --accent: #0b6bcb;
+    --rule: #e3e3e3;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121212;
+      --fg: #f2f2f2;
+      --muted: #c2c2c2;
+      --accent: #6fb3ff;
+      --rule: #2e2e2e;
+    }
+  }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 40px 16px 72px;
+  }
+  main { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 28px; margin: 0 0 4px; }
+  h2 { font-size: 19px; margin: 34px 0 8px; padding-top: 14px; border-top: 1px solid var(--rule); }
+  h3 { font-size: 16px; margin: 20px 0 4px; }
+  p, li { color: var(--muted); }
+  ul { padding-left: 20px; }
+  li { margin-bottom: 6px; }
+  a { color: var(--accent); }
+  .updated { color: var(--muted); font-size: 14px; margin: 0 0 8px; }
+  strong { color: var(--fg); }
+</style>
+</head>
+<body>
+<main>
+  <h1>ScoreBite Privacy Policy</h1>
+  <p class="updated">Last updated: 2 November 2026</p>
+
+  <h2>Overview</h2>
+  <p>
+    ScoreBite is a food scanning app. You scan a product&rsquo;s barcode, and ScoreBite looks it up in
+    <strong>Open Food Facts</strong>, a public food product database, to show a health score, nutrients, additives
+    and healthier alternatives. When a product has no usable data, you can instead photograph its ingredients or
+    nutrition label, and that photo is sent to <strong>OpenAI</strong>, a third-party artificial intelligence
+    provider in the United States, to produce a health check. This policy explains exactly what data ScoreBite
+    collects, how it is collected, every purpose it is used for, and every third party it is shared with.
+  </p>
+  <p>
+    A photo is only ever sent to OpenAI when you choose to analyze a label, take the photo yourself and crop it.
+    Barcode scans and searches never send photos anywhere.
+  </p>
+
+  <h2>What data we collect, and how</h2>
+  <p>
+    ScoreBite has no user accounts. We never ask for and never receive your name, email address, phone number,
+    contacts, precise location, or advertising identifier. The app handles only the following:
+  </p>
+  <ul>
+    <li>
+      <strong>Barcodes and search terms.</strong> Collected when you point the camera at a barcode or type a product
+      or brand name into search. The camera is only used after you grant the camera permission, and barcode
+      scanning happens on your device; no camera images are sent anywhere during a barcode scan.
+    </li>
+    <li>
+      <strong>Label photos you capture.</strong> Collected through your device camera, only when you choose to
+      analyze a label. You then crop the photo to the ingredients or nutrition label. ScoreBite does not read your
+      photo library, does not save these photos to your gallery, and does not use the camera in the background.
+    </li>
+    <li>
+      <strong>Scan results and history.</strong> Product details, health scores and breakdowns for products you
+      scan, including the cropped label photo for AI-analyzed products, plus cached healthier alternatives.
+    </li>
+    <li>
+      <strong>An anonymous sign-in identifier.</strong> Generated automatically by Firebase Anonymous
+      Authentication the first time you analyze a label photo. It is a random string tied to this app installation
+      and is not linked to any personal identifier. Its only job is to let our relay server apply a daily request
+      limit.
+    </li>
+    <li>
+      <strong>App preferences and usage counters.</strong> Theme, language, whether you have seen onboarding, your
+      subscription status flag, how many products you have scanned today and their barcodes. Collected from your
+      own interactions with the app.
+    </li>
+    <li>
+      <strong>Subscription receipts.</strong> When a subscription purchase succeeds, the store-issued product ID,
+      transaction ID, order ID, transaction date, purchase token, raw store receipt and device platform (iOS or
+      Android) are recorded in our Firebase Realtime Database so we can verify entitlements and resolve billing
+      disputes. This record contains no name, email or payment card data.
+    </li>
+  </ul>
+  <p>
+    Scan history, photos, preferences and counters are stored only on your device. You can delete individual
+    entries from your history in the app, and deleting ScoreBite removes this data, with one exception: on iPhone
+    and iPad, today&rsquo;s scan counter (the date, a count, and the barcodes scanned that day) is also kept in the
+    device keychain, which iOS preserves after the app is deleted, so that reinstalling does not reset free scans.
+    We keep no copy of your photos or scan history on any server we operate; subscription receipts are the only
+    record held on our side.
+  </p>
+
+  <h2>How we use this data</h2>
+  <ul>
+    <li>To look up the product you scanned or searched for and show its health score and details.</li>
+    <li>To analyze a label photo you chose to send and show you the result. This is the only purpose the photo is used for.</li>
+    <li>To suggest healthier alternatives in the same product category.</li>
+    <li>To show your own scan history on your device.</li>
+    <li>To enforce free-tier daily scan limits and unlock Premium features.</li>
+    <li>To remember your settings between launches.</li>
+  </ul>
+  <p>
+    We do not sell your data, do not share it with advertisers or data brokers, do not use it for advertising or
+    tracking across apps or websites, and do not build a profile about you.
+  </p>
+
+  <h2>Third parties we share data with</h2>
+  <p>
+    These are the only third parties that receive any data from ScoreBite. Each processes it under its own
+    published terms and privacy policy, linked below.
+  </p>
+
+  <h3>Open Food Facts &mdash; France</h3>
+  <p>
+    <strong>Receives:</strong> the barcodes you scan, the search terms you type, product categories (to find
+    alternatives), your app language, and the technical data inherent in any internet request, such as your IP
+    address and the app name and version. Product photos shown in the app are also loaded from Open Food Facts
+    servers.<br>
+    <strong>Purpose:</strong> returning product information, search results and alternatives to the app. Open Food
+    Facts does not receive your photos, your scan history or any account identifier.<br>
+    <a href="https://world.openfoodfacts.org/privacy">Open Food Facts Privacy Policy</a>
+  </p>
+
+  <h3>OpenAI, L.L.C. &mdash; United States</h3>
+  <p>
+    <strong>Receives:</strong> the cropped label photo you chose to analyze, and a fixed text instruction asking for
+    a product name, health score and ingredient breakdown.<br>
+    <strong>Purpose:</strong> generating that health check and returning it to the app.<br>
+    Under the OpenAI API terms that govern our use, content submitted through the API is not used to train OpenAI
+    models; it may be retained for up to 30 days for abuse monitoring and is then deleted. OpenAI does not receive
+    your name, email, device identifiers or location.<br>
+    <a href="https://openai.com/policies/privacy-policy">OpenAI Privacy Policy</a> &middot;
+    <a href="https://openai.com/policies/business-terms">OpenAI API data usage terms</a>
+  </p>
+
+  <h3>Cloudflare, Inc. &mdash; United States</h3>
+  <p>
+    <strong>Receives:</strong> the same label analysis request, in transit.<br>
+    <strong>Purpose:</strong> ScoreBite&rsquo;s own relay server runs on Cloudflare Workers so that our OpenAI key
+    never ships inside the app. The relay verifies your anonymous sign-in, counts requests for rate limiting, and
+    forwards the request to OpenAI. It does not store your photo.<br>
+    <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare Privacy Policy</a>
+  </p>
+
+  <h3>Google LLC (Firebase) &mdash; United States</h3>
+  <p>
+    <strong>Receives:</strong> a request to create and verify an anonymous sign-in for this app installation, plus
+    the technical data inherent in that request such as your IP address; and, when you subscribe, the store-issued
+    subscription receipt described above.<br>
+    <strong>Purpose:</strong> issuing the anonymous token our relay checks before forwarding anything to OpenAI, and
+    verifying subscription entitlements. No profile, email or name is created.<br>
+    <a href="https://firebase.google.com/support/privacy">Firebase Privacy Information</a>
+  </p>
+
+  <h3>Apple Inc. and Google LLC (app stores)</h3>
+  <p>
+    <strong>Receive:</strong> your purchase and subscription activity, handled entirely by the store. We never see
+    your card details.<br>
+    <strong>Purpose:</strong> processing subscriptions and confirming entitlement.
+  </p>
+
+  <h2>Label photos and AI</h2>
+  <p>
+    Analyzing a label is optional. ScoreBite only offers it when a scanned product is missing from Open Food Facts or
+    lacks usable data, and nothing is sent until you take the photo and crop it. If you never use this feature, no
+    photo ever leaves your device and no data is sent to OpenAI, Cloudflare or Firebase Authentication.
+  </p>
+  <p>
+    Please photograph only the product packaging, and avoid capturing faces, documents or other personal
+    information.
+  </p>
+
+  <h2>Retention and deletion</h2>
+  <ul>
+    <li>
+      On your device: history, photos and preferences are kept until you delete them in the app or delete the app.
+      On iPhone and iPad, the daily scan counter remains in the keychain after the app is deleted.
+    </li>
+    <li>At OpenAI: up to 30 days for abuse monitoring, then deleted, and never used for model training.</li>
+    <li>
+      On our relay: a per-day request counter keyed to your anonymous identifier, which expires automatically after
+      48 hours. No photos, prompts or responses are stored.
+    </li>
+    <li>In our Firebase database: subscription receipts, kept as long as needed for billing and entitlement records.</li>
+  </ul>
+
+  <h2>Your rights</h2>
+  <p>
+    Depending on where you live, you may have the right to access, correct, delete or export your personal data, to
+    object to or restrict its processing, and to withdraw consent. Because ScoreBite keeps your scans only on your
+    device and holds no account, you can exercise deletion yourself by deleting history entries or the app. For
+    anything else, including subscription receipts or what an anonymous identifier is associated with, write to
+    <a href="mailto:archimidias@gmail.com">archimidias@gmail.com</a> and we will respond within 30 days. We do not
+    sell or share personal information as those terms are defined under US state privacy laws.
+  </p>
+
+  <h2>Diagnostics</h2>
+  <p>
+    We may use basic crash and stability diagnostics provided by the app stores. These are aggregated and do not aim
+    to identify you personally. ScoreBite contains no third-party advertising or analytics SDKs.
+  </p>
+
+  <h2>Children&rsquo;s privacy</h2>
+  <p>
+    ScoreBite is a food and nutrition scanning app and is not directed at children under 13. We do not knowingly
+    collect personal information from children. If you believe a child has submitted personal information through
+    the app, contact <a href="mailto:archimidias@gmail.com">archimidias@gmail.com</a> and we will delete what we can
+    and disable the relevant identifier.
+  </p>
+
+  <h2>International transfers</h2>
+  <p>
+    OpenAI, Cloudflare and Google process data in the United States, and Open Food Facts operates from France. If you
+    use ScoreBite from another country, your barcodes and searches, and any label photo you choose to analyze, are
+    transferred to those countries for processing.
+  </p>
+
+  <h2>Changes</h2>
+  <p>
+    We may update this policy to reflect changes in the app, in the providers we use, or in legal requirements. When
+    we do, we will update the &ldquo;Last updated&rdquo; date above, and when a change materially affects what is
+    shared or with whom, we will also tell you inside the app.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    Questions about this policy or about your data:
+    <a href="mailto:archimidias@gmail.com">archimidias@gmail.com</a>
+  </p>
+</main>
+</body>
+</html>
